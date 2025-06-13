@@ -9,7 +9,7 @@ export default function BlogScreen() {
   if (!posts.length) {
     return (
       <View className="flex-1 justify-start bg-gray-900">
-        <Text className="text-white text-3xl my-4 text-center">BLOG MENU</Text>
+        <Text className="text-white text-3xl my-4 text-center font-bold">BLOG MENU</Text>
         <Text className="text-white text-xl text-center">No posts</Text>
       </View>
     );
@@ -17,7 +17,7 @@ export default function BlogScreen() {
 
   return (
     <View className="flex-1 bg-gray-900 px-4 py-6">
-      <Text className="text-white text-3xl mb-4 text-center">BLOG MENU</Text>
+      <Text className="text-white text-3xl mb-4 text-center font-bold">BLOG MENU</Text>
       <FlatList
         data={posts}
         keyExtractor={(item) => item.id.toString()}
