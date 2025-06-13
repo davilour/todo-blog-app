@@ -18,9 +18,11 @@ export default function PostScreen() {
   return (
     <View className="flex-1 justify-start bg-gray-900 p-4">
       <View className="mb-4">
-        <Text className="text-3xl text-white font-bold">Post your content in blog!</Text>
+        <Text className="text-3xl text-white font-bold">
+          Post your content in blog!
+        </Text>
       </View>
-      
+
       <View className="mb-4">
         <TextInput
           className="border border-gray-400 rounded-md px-4 py-2 text-white bg-gray-800"
@@ -42,7 +44,10 @@ export default function PostScreen() {
       </View>
 
       <View>
-        <Pressable className="bg-blue-600 py-2 px-6 rounded-lg" onPress={HandleAdd}>
+        <Pressable
+          className="bg-blue-600 py-2 px-6 rounded-lg"
+          onPress={HandleAdd}
+        >
           <Text className="text-white text-center">Add Post</Text>
         </Pressable>
       </View>

@@ -1,12 +1,19 @@
-import { usePostStore } from '@/store/post.store';
-import { useRouter } from 'expo-router';
-import { FlatList, Pressable, Text, View } from 'react-native';
+import { usePostStore } from "@/store/post.store";
+import { useRouter } from "expo-router";
+import { FlatList, Pressable, Text, View } from "react-native";
 
 export default function BlogScreen() {
-
   const { posts } = usePostStore();
   const router = useRouter();
 
+  if (!posts.length) {
+    return (
+      <View className="flex-1 justify-start bg-gray-900">
+        <Text className="text-white text-3xl my-4 text-center">BLOG MENU</Text>
+        <Text className="text-white text-xl text-center">No posts</Text>
+      </View>
+    );
+  }
 
   return (
     <View className="flex-1 bg-gray-900 px-4 py-6">

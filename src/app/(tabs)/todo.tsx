@@ -26,8 +26,8 @@ export default function TodoScreen() {
         value={text}
         onChangeText={setText}
       />
-      <Pressable 
-        className="bg-blue-600 p-3 rounded-full mb-6 items-center justify-center" 
+      <Pressable
+        className="bg-blue-600 p-3 rounded-full mb-6 items-center justify-center"
         onPress={HandleAdd}
       >
         <Text className="text-white font-semibold">Add</Text>
